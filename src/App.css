@@ -1,0 +1,16 @@
+.calculator__container {
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 10px 10px 140px 10px;
+    width: 550px;
+    aspect-ratio: 5/4;
+}
+
+@media (width <= 800px) {
+    .calculator__container {
+        width: 330px;
+        aspect-ratio: 4/5;
+        padding: 25px;
+        border-radius: 20px 20px 130px 20px;
+    }
+}

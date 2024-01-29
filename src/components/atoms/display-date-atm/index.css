@@ -1,0 +1,41 @@
+.date__wrapper {
+    font-size: 50px;
+    text-transform: lowercase;
+    font-style: italic;
+    display: flex;
+    gap: 10px;
+    color: var(--off-black);
+    align-items: center;
+    justify-content: center;
+    
+    .date__number-date {
+        font-weight: 900;
+        font-size: 70px;
+        color: var(--purple);
+    }
+
+    .date__number-date[data-date="false"] {
+        letter-spacing: 15px;
+        text-wrap: nowrap;
+    }
+    
+    .date__label {
+        font-weight: 900;
+    }
+}
+
+@media (width <= 800px) {
+    .date__wrapper{
+        font-size: 33px;
+
+        .date__number-date {
+            font-size: 45px;
+        }
+
+        .date__number-date[data-date="false"] {
+            letter-spacing: 5px;
+            
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+.calculator__display-date {
+    display: grid;
+    margin-top: 30px;
+    place-items: start;
+    line-height: 80px;
+}
+
+@media (width <= 800px) {
+    .calculator__display-date {
+        margin-top: 50px;
+        line-height: 60px;
+    }
+}

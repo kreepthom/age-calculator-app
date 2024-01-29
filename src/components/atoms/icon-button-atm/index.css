@@ -1,0 +1,23 @@
+.button {
+    --transition: 450ms;
+
+    border-radius: 50%;
+    width: 65px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    background-color: var(--purple);
+    aspect-ratio: 1;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--off-black);
+        transition: var(--transition);
+    }
+}
+
+@media (width <= 800px) {
+    .button {
+        width: 55px;
+    }
+}

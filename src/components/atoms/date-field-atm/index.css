@@ -1,0 +1,73 @@
+.date-field__wrapper {
+
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+    flex-direction: column;
+    
+    .date-field__input{
+        
+        font-weight: 700;
+        border: 1px solid var(--light-grey);
+        width: 105px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 15px;
+
+        &::placeholder {
+            font-weight: 700;
+        }
+
+        
+    }
+
+    .date-field__input[data-has-error="true"]{
+        
+        border: 1px solid var(--light-red);
+
+        &::placeholder {
+            font-weight: 700;
+        }
+    }
+
+    .date-field__label{
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--smokey-grey);
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+
+    .date-field__label[data-has-error="true"]{
+        color: var(--light-red);
+    }
+
+    .date-field__label-error {
+        color: var(--light-red);
+        font-size: 10px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+}
+
+@media (width <= 800px) {
+  .date-field__wrapper {
+
+    .date-field__input{
+        font-weight: 700;
+        width: 80px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .date-field__label{
+      font-size: 8px;
+    }
+
+    .date-field__label-error {
+      font-size: 7.8px;
+  }
+  }
+}
