@@ -1,9 +1,9 @@
 import * as Yup from 'yup';
 
 import TEXT from '@lang/text';
-import { ValidateDay, validateYear } from '@utilities/formTestFunction';
+import { ValidateDay, validateYear } from '@helpers/formTestFunction';
 
-export const ageFormSchema = Yup.object().shape({
+export const ageFormValidationSchema = Yup.object().shape({
   day: Yup.string()
     .required(TEXT.RequiredErrorMessage)
     .test('days-number-must-be-into-months-days', TEXT.ValidDayErrorMessage, ValidateDay),

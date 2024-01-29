@@ -3,24 +3,24 @@ import { ChangeEvent, FormEvent, useState } from "react"
 import AgeForm from '@molecules/age-form-mol';
 import SectionDates from "@molecules/section-date-mol";
 import useValidationForm from '@hooks/useValidationForm';
-import { ageFormSchema } from '@molecules/age-form-mol/schema';
+import { ageFormValidationSchema } from '@validations/ageFormValidation';
 import { calculateDiff } from "@utilities/utils";
 
-import { IFormData } from "@types";
+import { IAgeFormData } from "@types";
 
 import './App.css';
 
 function App() {
 const DEFAULT_DATA = { day: '', month: '', year: '' };
 
-const [formState, setFormState] = useState<IFormData>(DEFAULT_DATA);
-const [dateCalculated, setDateCalculated] = useState<IFormData>(DEFAULT_DATA);
-const [error, triggerValidation] = useValidationForm(ageFormSchema, formState);
+const [formState, setFormState] = useState<IAgeFormData>(DEFAULT_DATA);
+const [dateCalculated, setDateCalculated] = useState<IAgeFormData>(DEFAULT_DATA);
+const [error, triggerValidation] = useValidationForm(ageFormValidationSchema, formState);
 
 const handleOnChangeForm = (e: ChangeEvent<HTMLInputElement>) => {
   setFormState({ 
     ...formState,
-    [e.target.name as keyof IFormData]: e.target.value,
+    [e.target.name as keyof IAgeFormData]: e.target.value,
   })
 }
 

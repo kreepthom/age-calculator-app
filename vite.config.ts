@@ -5,12 +5,14 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 const pathAlias = {
   "@atoms": "/components/atoms",
-  "@icons": "/components/icons",
-  "@molecules": "/components/molecules",
-  "@utilities": "/utilities",
+  "@helpers": "/helpers",
   "@hooks": "/hooks",
+  "@icons": "/components/icons",
   "@lang": "/lang",
+  "@molecules": "/components/molecules",
   "@types": "/types",
+  "@utilities": "/utilities",
+  "@validations": "/validations",
 };
 
 const BASE_URL = './src';

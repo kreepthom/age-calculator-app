@@ -6,12 +6,14 @@
     "baseUrl": "src",
     "paths": {
       "@atoms/*": ["./components/atoms/*"],
-      "@icons/*": ["./components/icons/*"],
-      "@molecules/*": ["./components/molecules/*"],
-      "@utilities/*": ["./utilities/*"],
+      "@helpers/*": ["./helpers/*"],
       "@hooks/*": ["./hooks/*"],
+      "@icons/*": ["./components/icons/*"],
+      "@lang/*": ["./lang/*"],
+      "@molecules/*": ["./components/molecules/*"],
       "@types": ["./types/types"],
-      "@lang/*": ["./lang/*"]
+      "@utilities/*": ["./utilities/*"],
+      "@validations/*": ["./validations/*"]
     },
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
