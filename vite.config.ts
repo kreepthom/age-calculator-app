@@ -17,6 +17,9 @@ const BASE_URL = './src';
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: './docs'
+  },
   resolve: {
     alias: Object.entries(pathAlias).map(([alias, path]) => ({
       find: alias,
