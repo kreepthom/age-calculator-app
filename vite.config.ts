@@ -19,6 +19,7 @@ const BASE_URL = './src';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/age-calculator-app/',
   build: {
     outDir: './docs'
   },
