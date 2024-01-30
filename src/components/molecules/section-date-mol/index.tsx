@@ -1,12 +1,12 @@
 import TEXT from '@lang/text';
 import DisplayDateAtm from '@atoms/display-date-atm';
 
-import { IFormData } from '@types';
+import { IAgeFormData } from '@types';
 
 import './index.css';
 
 interface ISectionDates {
-  dateCalculated: IFormData;
+  dateCalculated: IAgeFormData;
 }
 
 const SectionDatesMol = ({ dateCalculated }: ISectionDates) => {

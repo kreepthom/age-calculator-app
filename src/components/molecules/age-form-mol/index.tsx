@@ -5,15 +5,15 @@ import IconButtonAtm from '@atoms/icon-button-atm'
 import ArrowIcon from '@icons/ArrowIcon'
 import TEXT from '@lang/text'
 
-import { IFormData } from '@types';
+import { IAgeFormData } from '@types';
 
 import './index.css';
 
 interface IAgeForm {
-  formState: IFormData;
+  formState: IAgeFormData;
   handleOnChangeForm: (e: ChangeEvent<HTMLInputElement>) => void;
   handleSubmitForm: (e: FormEvent<HTMLFormElement>) => void;
-  errors?: Record<keyof IFormData, string> | null;
+  errors?: Record<keyof IAgeFormData, string> | null;
 }
 
 const AgeForm = ({ handleSubmitForm, formState, handleOnChangeForm, errors }: IAgeForm) => {
