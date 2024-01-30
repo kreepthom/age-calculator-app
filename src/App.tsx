@@ -4,7 +4,7 @@ import AgeForm from '@molecules/age-form-mol';
 import SectionDates from "@molecules/section-date-mol";
 import useValidationForm from '@hooks/useValidationForm';
 import { ageFormValidationSchema } from '@validations/ageFormValidation';
-import { calculateDiff } from "@utilities/utils";
+import { calculateDateDiff } from "@utilities/utils";
 
 import { IAgeFormData } from "@types";
 
@@ -30,7 +30,7 @@ const handleSubmitForm = async (e: FormEvent<HTMLFormElement>) => {
 
   if (!isValid) return;
 
-  const diff = calculateDiff(+formState.day, +formState.month, +formState.year);
+  const diff = calculateDateDiff(+formState.day, +formState.month, +formState.year);
   setDateCalculated(diff);
 }
 

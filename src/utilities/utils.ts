@@ -1,4 +1,4 @@
-export const calculateDiff = (day: number, month: number, year: number) => {
+export const calculateDateDiff = (day: number, month: number, year: number) => {
     const currentDate = new Date();
   
     const currentMonth = currentDate.getMonth() + 1;
@@ -13,7 +13,7 @@ export const calculateDiff = (day: number, month: number, year: number) => {
       yearDiff--;
     }
   
-    if (currentDay > day) {
+    if (currentDay >= day) {
       monthDiff++
     }
   
