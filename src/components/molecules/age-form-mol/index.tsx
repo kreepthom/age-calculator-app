@@ -1,22 +1,26 @@
+// @packages
 import { ChangeEvent, FormEvent } from 'react';
 
+// @scripts
 import DateFieldAtm from '@atoms/date-field-atm'
 import IconButtonAtm from '@atoms/icon-button-atm'
 import ArrowIcon from '@icons/ArrowIcon'
 import TEXT from '@lang/text'
 
-import { IAgeFormData } from '@types';
+// @types
+import { AgeFormData } from '@typesDef/ageFormTypes';
 
+// @styles
 import './index.css';
 
-interface IAgeForm {
-  formState: IAgeFormData;
+interface AgeFormProps {
+  formState: AgeFormData;
   handleOnChangeForm: (e: ChangeEvent<HTMLInputElement>) => void;
   handleSubmitForm: (e: FormEvent<HTMLFormElement>) => void;
-  errors?: Record<keyof IAgeFormData, string> | null;
+  errors?: Record<keyof AgeFormData, string> | null;
 }
 
-const AgeForm = ({ handleSubmitForm, formState, handleOnChangeForm, errors }: IAgeForm) => {
+const AgeForm = ({ handleSubmitForm, formState, handleOnChangeForm, errors }: AgeFormProps) => {
   return (
     <form 
     className="calculator__form"

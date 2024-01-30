@@ -1,15 +1,18 @@
+// @scripts
 import TEXT from '@lang/text';
 import DisplayDateAtm from '@atoms/display-date-atm';
 
-import { IAgeFormData } from '@types';
+// @types
+import { AgeFormData } from '@typesDef/ageFormTypes';
 
+// @styles
 import './index.css';
 
-interface ISectionDates {
-  dateCalculated: IAgeFormData;
+interface SectionDatesProps {
+  dateCalculated: AgeFormData;
 }
 
-const SectionDatesMol = ({ dateCalculated }: ISectionDates) => {
+const SectionDatesMol = ({ dateCalculated }: SectionDatesProps) => {
   return (
     <section className="calculator__display-date">
       <DisplayDateAtm 

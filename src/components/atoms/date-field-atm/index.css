@@ -1,12 +1,10 @@
 .date-field__wrapper {
-
     display: flex;
     gap: 8px;
     justify-content: start;
     flex-direction: column;
     
     .date-field__input{
-        
         font-weight: 700;
         border: 1px solid var(--light-grey);
         width: 105px;
@@ -18,12 +16,9 @@
         &::placeholder {
             font-weight: 700;
         }
-
-        
     }
 
     .date-field__input[data-has-error="true"]{
-        
         border: 1px solid var(--light-red);
 
         &::placeholder {
@@ -54,7 +49,6 @@
 
 @media (width <= 800px) {
   .date-field__wrapper {
-
     .date-field__input{
         font-weight: 700;
         width: 80px;

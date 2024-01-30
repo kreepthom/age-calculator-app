@@ -1,11 +1,12 @@
+// @styles
 import './index.css';
 
-interface IDisplayDate {
+interface DisplayDateProps {
     date?: string | number;
     label: string;
 }
 
-const DisplayDateAtm = ({ date, label }: IDisplayDate) => {
+const DisplayDateAtm = ({ date, label }: DisplayDateProps) => {
   return (
     <div className="date__wrapper">
       <span 

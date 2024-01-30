@@ -11,7 +11,7 @@
       "@icons/*": ["./components/icons/*"],
       "@lang/*": ["./lang/*"],
       "@molecules/*": ["./components/molecules/*"],
-      "@types": ["./types/types"],
+      "@typesDef/*": ["./types/*"],
       "@utilities/*": ["./utilities/*"],
       "@validations/*": ["./validations/*"]
     },

@@ -1,10 +1,13 @@
+// @packages
 import { ChangeEvent, InputHTMLAttributes } from "react";
 
+// @scripts
 import regex from "@utilities/regex";
 
+// @styles
 import './index.css';
 
-interface IDateField extends InputHTMLAttributes<HTMLInputElement > {
+interface DateFieldProps extends InputHTMLAttributes<HTMLInputElement > {
     error?: string;
     label: string;
     maxValue?: number;
@@ -14,7 +17,7 @@ interface IDateField extends InputHTMLAttributes<HTMLInputElement > {
     value: string;
 }
 
-const DateFieldAtm = (props: IDateField) => {
+const DateFieldAtm = (props: DateFieldProps) => {
   const { 
     value,
     onChange = () => {},

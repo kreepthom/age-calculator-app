@@ -1,13 +1,14 @@
+// @styles
 import './index.css';
 
-interface IconButton {
+interface IconButtonProps {
     src?: string;
     alt?: string;
     icon?: JSX.Element;
     onClick?: () => void;
 }
 
-const IconButtonAtm = ({ src, alt = 'icon', icon, onClick = () => {} }: IconButton) => {
+const IconButtonAtm = ({ src, alt = 'icon', icon, onClick = () => {} }: IconButtonProps) => {
   return (
     <button 
       className="button"
